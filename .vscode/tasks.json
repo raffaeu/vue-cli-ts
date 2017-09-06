@@ -1,0 +1,13 @@
+{
+    "version": "2.0.0",
+    "tasks": [     
+        {            
+            "taskName": "chrome",
+            "type": "shell",
+            "command": "Chrome",
+            "args": [
+                "${file}"
+            ]
+        }
+    ]
+}
