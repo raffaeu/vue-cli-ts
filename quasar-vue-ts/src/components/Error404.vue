@@ -31,24 +31,22 @@
   </div>
 </template>
 
-<script>
-import { QBtn, QIcon } from 'quasar'
+<script lang="ts">
+import * as Quasar from 'quasar'
+import * as Vue from 'vue'
+import Component from 'vue-class-component'
 
-export default {
-  components: {
-    QBtn,
-    QIcon
-  },
-  data () {
-    return {
-      canGoBack: window.history.length > 1
+@Component({})
+export default class ErrorComponent extends Vue {
+    canGoBack = window.history.length > 1
+    goBack() {
+        window.history.go(-1)
     }
-  },
-  methods: {
-    goBack () {
-      window.history.go(-1)
+    data() {
+        return {
+            canGoBack: window.history.length > 1
+        }
     }
-  }
 }
 </script>
 
