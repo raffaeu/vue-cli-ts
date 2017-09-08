@@ -1,11 +1,11 @@
-import { expect } from 'chai'
-import { Person } from '../../../src/components/person'
+import { expect } from 'chai';
+import { Person } from '../../../src/components/person';
 
-describe('Person module', () => {
+describe('Person.ts', () => {
 
     it('should populate credentials', () => {
         var expected: Person = new Person('first', 'last');
-        expected.firstName.should.eql('first')
+        expected.firstName.should.eql('first');
         expected.lastName.should.eql('last');
     });
 
