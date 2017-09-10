@@ -32,8 +32,8 @@
 </template>
 
 <script lang="ts">
-import * as Quasar from 'quasar'
-import * as Vue from 'vue'
+import Quasar from 'quasar'
+import Vue from 'vue'
 import Component from 'vue-class-component'
 
 @Component({})
