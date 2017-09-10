@@ -36,7 +36,9 @@ import Quasar from 'quasar'
 import Vue from 'vue'
 import Component from 'vue-class-component'
 
-@Component({})
+@Component({
+  name: 'ErrorComponent'
+})
 export default class ErrorComponent extends Vue {
     canGoBack = window.history.length > 1
     goBack() {

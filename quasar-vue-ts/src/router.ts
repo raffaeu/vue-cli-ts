@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeComponent from './components/Hello.vue'
+import HomeComponent from './components/Main.vue'
 import ErrorComponent from './components/Error404.vue'
 
 Vue.use(VueRouter)
